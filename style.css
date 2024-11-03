@@ -1,0 +1,68 @@
+@font-face {
+    font-family: myFont;
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face {
+    font-family: myyFont;
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+    font-family: myFont;
+}
+h2:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.mainDiv{
+    border: 2px solid;
+    border-radius: 16px;
+    box-shadow: 5px 5px 3px;
+    background-color: hsl(0, 0%, 100%);
+    width: 28%;
+    margin: 70px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.imaage{
+    width: 100%;
+    border-radius: 16px;
+}
+.learn{
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 10px;
+    width: 26%;
+    padding: 10px;
+}
+.div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.publish{
+    font-family: myyFont;
+}
+.image{
+    width: 40px;
+    height: 40px;
+}
+.p{
+    font-family: myyFont;
+    font-weight: 100;
+}
+@media screen and (max-width: 1200px) {
+    .mainDiv{
+        width: 95%;
+        gap: 30px;
+    }
+    .learn{
+        width: 30%;
+    }
+}
